@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lendas Urbanas</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_categorias">Todas Categorias</string>
+    <string name="menu_casas_assombradas">Casas Assombradas</string>
+    <string name="menu_fantasmas">Fantasmas</string>
+    <string name="menu_rituais">Rituais</string>
+    <string name="menu_lidos">Lidos</string>
+    <string name="menu_nao_lidos">Não Lidos</string>
+    <string name="menu_favoritos">Favoritos</string>
+    <string name="menu_aleatorio">Aleatório</string>
+</resources>

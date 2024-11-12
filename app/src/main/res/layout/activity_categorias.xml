@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:paddingBottom="-32dp"
+    tools:context=".view.CategoriasActivity"
+    android:background="@drawable/adicionar">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Título:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_titulo"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/text_lenda"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_nome"
+        android:layout_centerHorizontal="true"
+        android:text="Lenda:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_lenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_lenda"
+        android:inputType="textMultiLine"
+        android:maxLines="7"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/edit_lenda"
+        android:layout_centerHorizontal="true"
+        android:text="Status:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_status"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_lidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lida"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radio_nao_lida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:text="Não lida"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_favoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Favoritar: "
+        android:layout_below="@+id/radio_group_status"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/radio_favoritar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_favoritos"
+        android:layout_alignBaseline="@+id/text_favoritos"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_marginTop="590dp"
+        android:layout_marginStart="60dp"/>
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARE"
+        android:layout_marginTop="590dp"
+        android:layout_marginStart="32dp"
+        android:layout_toRightOf="@+id/button_save"/>
+
+    <Button
+        android:id="@+id/button_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aleatório"
+        android:layout_marginTop="540dp"
+        android:layout_marginStart="110dp"
+        />
+
+    <TextView
+        android:id="@+id/text_categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Categoria: "
+        android:layout_below="@+id/text_favoritos"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <RadioGroup
+        android:id="@+id/radio_categorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_categoria">
+
+        <RadioButton
+            android:id="@+id/radio_casas_assombradas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casas Assombradas"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radio_fantasmas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radio_lidas"
+            android:layout_toRightOf="@+id/radio_lidas"
+            android:text="Fantasmas"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radio_rituais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radio_lidas"
+            android:layout_toRightOf="@+id/radio_lidas"
+            android:text="Rituais"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+</RelativeLayout>

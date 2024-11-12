@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_categorias">
+
+    <fragment
+        android:id="@+id/nav_categorias"
+        android:name="com.example.projeto.view.CategoriasFragment"
+        android:label="@string/menu_categorias"
+        tools:layout="@layout/fragment_categorias" />
+
+    <fragment
+        android:id="@+id/nav_casas_assombradas"
+        android:name="com.example.projeto.view.CasasAssombradasFragment"
+        android:label="@string/menu_casas_assombradas"
+        tools:layout="@layout/fragment_casas_assombradas" />
+
+    <fragment
+        android:id="@+id/nav_fantasmas"
+        android:name="com.example.projeto.view.FantasmasFragment"
+        android:label="@string/menu_fantasmas"
+        tools:layout="@layout/fragment_fantasmas" />
+
+    <fragment
+        android:id="@+id/nav_rituais"
+        android:name="com.example.projeto.view.RituaisFragment"
+        android:label="@string/menu_rituais"
+        tools:layout="@layout/fragment_rituais" />
+
+    <fragment
+        android:id="@+id/nav_lidos"
+        android:name="com.example.projeto.view.LidosFragment"
+        android:label="@string/menu_lidos"
+        tools:layout="@layout/fragment_lidos" />
+
+    <fragment
+        android:id="@+id/nav_nao_lidos"
+        android:name="com.example.projeto.view.NaoLidosFragment"
+        android:label="@string/menu_nao_lidos"
+        tools:layout="@layout/fragment_nao_lidos" />
+
+    <fragment
+        android:id="@+id/nav_favoritos"
+        android:name="com.example.projeto.view.FavoritosFragment"
+        android:label="@string/menu_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+
+</navigation>

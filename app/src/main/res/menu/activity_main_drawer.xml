@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_categorias"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Todas as Categorias" />
+        <item
+            android:id="@+id/nav_casas_assombradas"
+            android:icon="@drawable/baseline_add_home_24"
+            android:title="@string/menu_casas_assombradas" />
+        <item
+            android:id="@+id/nav_fantasmas"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_fantasmas" />
+        <item
+            android:id="@+id/nav_rituais"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_rituais" />
+        <item
+            android:id="@+id/nav_lidos"
+            android:icon="@drawable/baseline_add_task_24"
+            android:title="@string/menu_lidos" />
+        <item
+            android:id="@+id/nav_nao_lidos"
+            android:icon="@drawable/baseline_disabled_visible_24"
+            android:title="@string/menu_nao_lidos" />
+        <item
+            android:id="@+id/nav_favoritos"
+            android:icon="@drawable/favorito_icon"
+            android:title="@string/menu_favoritos" />
+    </group>
+</menu>
